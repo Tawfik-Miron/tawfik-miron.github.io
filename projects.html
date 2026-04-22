@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects — Md. Tawfik Imroz</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">T<span class="gold">.</span>I</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="achievements.html">Achievements</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <span class="page-tag">Portfolio</span>
+    <h1>Projects & <span class="gold">Case Studies</span></h1>
+    <p>Real-world security engineering work — from cloud architecture to incident response playbooks and automated compliance frameworks.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section-pad">
+    <div class="container">
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="ftab active" data-filter="all">All</button>
+        <button class="ftab" data-filter="aws">AWS</button>
+        <button class="ftab" data-filter="azure">Azure</button>
+        <button class="ftab" data-filter="devsecops">DevSecOps</button>
+        <button class="ftab" data-filter="iam">IAM</button>
+        <button class="ftab" data-filter="compliance">Compliance</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- P1 -->
+        <div class="project-card" data-tags="aws iam">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <path d="M40 10 L65 25 L65 55 C65 68 53 76 40 80 C27 76 15 68 15 55 L15 25 Z" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+              <circle cx="40" cy="44" r="12" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+              <path d="M34 43 L38 47 L46 39" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">AWS</span>
+              <span class="proj-tag">IAM</span>
+              <span class="proj-tag">Terraform</span>
+              <span class="proj-tag">Zero Trust</span>
+            </div>
+            <h3>Zero-Trust Multi-Account AWS Architecture</h3>
+            <p>Designed and deployed a full zero-trust security model across a 40+ microservice AWS environment. Implemented least-privilege IAM roles, service control policies (SCPs), and automated policy enforcement using Terraform and AWS Config rules.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- P2 -->
+        <div class="project-card" data-tags="devsecops aws">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="10" y="20" width="25" height="18" rx="3" stroke="#C9A84C" stroke-width="1.2"/>
+              <rect x="45" y="20" width="25" height="18" rx="3" stroke="#C9A84C" stroke-width="1.2"/>
+              <rect x="27" y="50" width="25" height="18" rx="3" stroke="#C9A84C" stroke-width="1.2"/>
+              <path d="M22 38 L22 45 L40 45" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3"/>
+              <path d="M57 38 L57 45 L40 45" stroke="#C9A84C" stroke-width="1" stroke-dasharray="3"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">DevSecOps</span>
+              <span class="proj-tag">GitHub Actions</span>
+              <span class="proj-tag">Trivy</span>
+              <span class="proj-tag">SAST</span>
+            </div>
+            <h3>Automated DevSecOps Pipeline</h3>
+            <p>Built a security-integrated CI/CD pipeline using GitHub Actions with automated SAST, DAST, container image scanning (Trivy), secrets detection, and IaC policy checks — reducing vulnerability detection time by 70%.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- P3 -->
+        <div class="project-card" data-tags="azure compliance">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="12" y="12" width="56" height="40" rx="4" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+              <path d="M12 24 L68 24" stroke="#C9A84C" stroke-width="1"/>
+              <circle cx="20" cy="18" r="2" fill="#C9A84C" opacity="0.6"/>
+              <circle cx="27" cy="18" r="2" fill="#C9A84C" opacity="0.4"/>
+              <rect x="20" y="32" width="20" height="3" rx="1.5" fill="#C9A84C" opacity="0.5"/>
+              <rect x="20" y="39" width="30" height="3" rx="1.5" fill="#C9A84C" opacity="0.3"/>
+              <rect x="20" y="46" width="14" height="3" rx="1.5" fill="#C9A84C" opacity="0.4"/>
+              <path d="M55 35 L62 42 L55 49" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Azure</span>
+              <span class="proj-tag">ISO 27001</span>
+              <span class="proj-tag">SOC 2</span>
+              <span class="proj-tag">Compliance</span>
+            </div>
+            <h3>Azure Compliance Automation Framework</h3>
+            <p>Developed an automated compliance posture management system for Azure, continuously monitoring and enforcing ISO 27001 and SOC 2 controls, with auto-remediation for 85% of common drift scenarios.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- P4 -->
+        <div class="project-card" data-tags="aws devsecops">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="40" r="22" stroke="#C9A84C" stroke-width="1.2" fill="none"/>
+              <circle cx="40" cy="40" r="12" stroke="#C9A84C" stroke-width="1" fill="none" opacity="0.5"/>
+              <path d="M40 18 L40 28M40 52 L40 62M18 40 L28 40M52 40 L62 40" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="40" cy="40" r="4" fill="#C9A84C"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">AWS</span>
+              <span class="proj-tag">GuardDuty</span>
+              <span class="proj-tag">Lambda</span>
+              <span class="proj-tag">Automation</span>
+            </div>
+            <h3>Cloud-Native Threat Detection System</h3>
+            <p>Engineered a serverless threat detection and auto-response system using AWS GuardDuty, Security Hub, and Lambda. Automated isolation of compromised instances within 60 seconds of detection, reducing MTTR by 80%.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- P5 -->
+        <div class="project-card" data-tags="iam azure">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="15" y="30" width="50" height="32" rx="4" stroke="#C9A84C" stroke-width="1.2"/>
+              <path d="M28 30 V24 C28 17.4 52 17.4 52 24 V30" stroke="#C9A84C" stroke-width="1.5"/>
+              <circle cx="40" cy="46" r="5" stroke="#C9A84C" stroke-width="1.2"/>
+              <path d="M40 51 L40 56" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Azure AD</span>
+              <span class="proj-tag">IAM</span>
+              <span class="proj-tag">PAM</span>
+              <span class="proj-tag">MFA</span>
+            </div>
+            <h3>Enterprise Identity & Access Overhaul</h3>
+            <p>Led a full IAM redesign for a 500-user Azure AD environment — implementing conditional access policies, privileged identity management (PIM), MFA enforcement, and just-in-time access workflows.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+        <!-- P6 -->
+        <div class="project-card" data-tags="compliance devsecops">
+          <div class="project-banner">
+            <svg viewBox="0 0 80 80" fill="none">
+              <rect x="18" y="12" width="44" height="56" rx="4" stroke="#C9A84C" stroke-width="1.2"/>
+              <path d="M28 26 L52 26M28 34 L52 34M28 42 L44 42" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+              <circle cx="54" cy="56" r="10" fill="#0e0e14" stroke="#C9A84C" stroke-width="1.2"/>
+              <path d="M50 56 L53 59 L58 54" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">NIST CSF</span>
+              <span class="proj-tag">CIS Benchmarks</span>
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">Reporting</span>
+            </div>
+            <h3>Automated Security Posture Reporting</h3>
+            <p>Built a Python-based tool that aggregates findings from AWS Security Hub, Azure Defender, and CIS benchmarks into a single executive dashboard — automating weekly security posture reports for leadership.</p>
+            <a href="#" class="proj-link">View Case Study →</a>
+          </div>
+        </div>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <h2>Have a project in mind?</h2>
+      <p>Let's collaborate on securing your cloud infrastructure from the ground up.</p>
+      <a href="contact.html" class="btn-primary">Get In Touch →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">Md. Tawfik Imroz</div>
+      <nav class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2025 Md. Tawfik Imroz. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu(){ document.querySelector('.nav-links').classList.toggle('open'); }
+
+    // Filter logic
+    document.querySelectorAll('.ftab').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card=>{
+          const tags = card.dataset.tags || '';
+          if(filter==='all' || tags.includes(filter)){
+            card.style.display='block';
+          } else {
+            card.style.display='none';
+          }
+        });
+      });
+    });
+
+    // Scroll reveal
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+    },{threshold:0.1});
+    document.querySelectorAll('.project-card').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>
